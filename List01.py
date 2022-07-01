@@ -6,4 +6,7 @@ def main():
     Returns:
         list: return answer
     """
-    return
+    arr = ['a','b','abs']
+    x = arr[0:8:-1]
+    return x
+print(main())
