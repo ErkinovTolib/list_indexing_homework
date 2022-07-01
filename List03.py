@@ -7,4 +7,9 @@ def main(list1,list2):
     Returns:
         list: return answer
     """
-    return
+    list = list1 + list2
+    return list
+print(main(['code','python'],['python coder','codeschool']))
+
+
+
