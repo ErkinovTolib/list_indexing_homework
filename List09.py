@@ -10,9 +10,8 @@ def main(list1):
     i = 0
     while i<len(list1):
         if list1[0] == list1[i]:
-            c = True
-        else:
-            c = False    
+            return True
+        if list1[0] != list1[i]:
+            return False  
         i += 1
-    return c
-print(main([1,0,1,1,1]))
+print(main([1,0,0,0,0]))
