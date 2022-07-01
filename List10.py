@@ -8,11 +8,11 @@ def main(list_num):
     """
     i = 0
     while i<len(list_num):
-        if list_num[i]>list_num[i-1]:
-            c = list_num[i]
+        if list_num[0]>list_num[-1]:
+            c = list_num[0]
         else:
-            c = list_num[i-1]
+            c = list_num[-1]
         i += 1
     return c
-print(main([1,8,9,5]))
+print(main([1,8,9,45]))
         
