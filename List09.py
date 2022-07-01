@@ -1,3 +1,6 @@
+from multiprocessing.connection import answer_challenge
+
+
 def main(list1):
     """
     A list of several elements is given. True if all items are the same,
@@ -8,10 +11,12 @@ def main(list1):
         bool: return answer
     """
     i = 0
+    ans = 0
     while i<len(list1):
         if list1[0] == list1[i]:
-            return True
-        if list1[0] != list1[i]:
-            return False  
+            ans = True
+        else:
+            ans = False
         i += 1
-print(main([1,0,0,0,0]))
+    return ans
+print(main([0,0,0,0,1]))
